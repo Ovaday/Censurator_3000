@@ -8,6 +8,8 @@ Console tool to censure any word or symbol in your text
 2) Enter menu number and go on
 
 Image examples:
-<img src="./img/example.JPG">
-<br>
 <img src="./img/start_menu.JPG">
+<br><br>
+<img src="./img/example.JPG">
+
+
