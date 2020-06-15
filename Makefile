@@ -1,17 +1,14 @@
-CC=g++
-CFLAGS=-c -Wall
-LDFLAGS=
-SOURCES=main.cpp
-OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=hello
+CXXFLAGS = -g -std=c++11 -Wall -Wfatal-errors
 
-all: $(SOURCES) $(EXECUTABLE)
-	
-$(EXECUTABLE): $(OBJECTS) 
-	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
+ALL = main
 
-.cpp.o:
-	$(CC) $(CFLAGS) $< -o $@
+all: $(ALL)
+
+hello: main.cpp Makefile
+	$(CXX) $(CXXFLAGS) -o $@ $@.cpp
+
+clean:
+	$(RM) $(ALL) *.o
 
 test: all
 	bash test
