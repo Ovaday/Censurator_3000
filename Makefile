@@ -1,15 +1,17 @@
-CXXFLAGS = -g -Wall -Wfatal-errors -std=c++14
+CC=g++
+CFLAGS=-c -Wall
+LDFLAGS=
+SOURCES=main.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
+EXECUTABLE=hello
 
-ALL = main
+all: $(SOURCES) $(EXECUTABLE)
+	
+$(EXECUTABLE): $(OBJECTS) 
+	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 
-all: 
-	g++ main.cpp -std=c++11 -o main
-
-main: main.cpp Makefile
-	$(CXX) $(CXXFLAGS) -o $@ $@.cpp
-
-clean:
-	$(RM) $(ALL) *.o
+.cpp.o:
+	$(CC) $(CFLAGS) $< -o $@
 
 test: all
 	bash test
