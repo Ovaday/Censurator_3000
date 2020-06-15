@@ -3,7 +3,7 @@ CXXFLAGS = -g -Wall -Wfatal-errors -std=c++14
 ALL = main
 
 all: 
-	g++ main.cpp functions.cpp functions.hpp -o main
+	g++ main.cpp functions.cpp -o main
 
 main: main.cpp Makefile
 	$(CXX) $(CXXFLAGS) -o $@ $@.cpp
