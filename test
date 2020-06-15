@@ -18,6 +18,6 @@ fail() {
 }
 
 t program should run
-./hello >/dev/null 2>&1 && pass || fail
+./main >/dev/null 2>&1 && pass || fail
 
 echo ALL TESTS PASSED
