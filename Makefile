@@ -9,6 +9,3 @@ hello: main.cpp Makefile
 
 clean:
 	$(RM) $(ALL) *.o
-
-test: all
-	bash main
