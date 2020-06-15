@@ -1,4 +1,4 @@
-# Censurator_3000
+# Censurator_3000 <img src="https://travis-ci.com/Ovaday/Censurator_3000.svg?branch=master">
 Console tool to censure any word or symbol in your text
 
 <hr>
