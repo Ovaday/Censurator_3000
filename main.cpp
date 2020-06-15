@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 std::string finished;
-#include "functions.hpp"
 #include "functions.cpp"
 
 int main(){
