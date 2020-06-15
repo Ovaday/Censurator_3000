@@ -1,7 +1,11 @@
 #include <iostream>
 #include <string>
 std::string finished;
-
+int replace(std::string &word, std::string &text, int i){
+for (int e = 0; e < word.size(); e++){
+ finished[i+e]='*';
+}
+}
 int bleep(std::string &word, std::string &text){
   std::string new_text=text;
   int cfirst, clast;
@@ -19,11 +23,7 @@ int bleep(std::string &word, std::string &text){
     }
   }
 }
-int replace(std::string &word, std::string &text, int i){
-for (int e = 0; e < word.size(); e++){
- finished[i+e]='*';
-}
-}
+
 
 int main(){
   std::string word_default = "broccoli";
